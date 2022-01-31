@@ -76,7 +76,7 @@ bot.command('rss', sendError, async (ctx: MContext) => {
     await ctx.replyWithMarkdown(builder.join('\n'));
 });
 
-bot.command('rss-help', sendError, async (ctx: MContext) => {
+bot.command('help', sendError, async (ctx: MContext) => {
     const builder = [];
     const { lang } = ctx.state;
     builder.push(i18n[lang]['SUB_USAGE']);
@@ -99,7 +99,7 @@ bot.command('unsub', sendError, isAdmin, getUrl, unsub);
 
 bot.command('unsubthis', sendError, isAdmin, getUrlByTitle, unsub);
 
-bot.command('rss-me', sendError, isAdmin, rss);
+bot.command('save', sendError, isAdmin, rss);
 
 bot.command('export', sendError, isAdmin, exportToOpml);
 
