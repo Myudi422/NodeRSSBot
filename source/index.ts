@@ -99,7 +99,7 @@ bot.command('unsub', sendError, isAdmin, getUrl, unsub);
 
 bot.command('unsubthis', sendError, isAdmin, getUrlByTitle, unsub);
 
-bot.command('save', sendError, isAdmin, rss);
+bot.command('saved', sendError, isAdmin, rss);
 
 bot.command('export', sendError, isAdmin, exportToOpml);
 
